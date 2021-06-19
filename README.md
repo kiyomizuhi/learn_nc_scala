@@ -1,1 +1,3 @@
-# learn_scala_intro
+# learn_scala
+
+- intro
