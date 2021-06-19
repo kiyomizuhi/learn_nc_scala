@@ -1,3 +1,3 @@
-# learn_scala
+# learn_nc_scala
 
 - intro
