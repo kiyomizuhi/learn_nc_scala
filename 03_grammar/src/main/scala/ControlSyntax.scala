@@ -39,4 +39,25 @@ object ControlSyntax extends App {
     for (e <- Seq("A", "B", "C", "D", "E")) yield "Pre" + e
   }
 
+  def printIsBaby(age: Int, isSchoolStarted: Boolean): Unit = {
+    if ((age >= 1) && (age <= 6) && (!isSchoolStarted)) {
+      println("infant")
+    } else {
+      println("not infant")
+    }
+  }
+
+  def loopFrom0To9(): Unit = {
+    var i = 0
+    do {
+      println(i)
+      i += 1
+    } while (i < 10)
+  }
+
+  def printRightTriangles(): Unit = {
+    for (x <- 1 to 100; y <- 1 to 100; z <- 1 to 100 if x * x == y * y + z * z || y * y == z * z + x * x || z * z == x * x + y * y) {
+      println(x, y, z)
+    }
+  }
 }
